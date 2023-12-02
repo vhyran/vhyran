@@ -1,6 +1,6 @@
 # About Me
 
-It's me [Janit Kumar](https://github.com/umare-light).\
+It's me [Janit Kumar](https://github.com/MineNique).\
 Really I don't know about myself. \
 By the way, I am using **Arch Linux**
 
@@ -14,7 +14,6 @@ By the way, I am using **Arch Linux**
 ## Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/janit-kumar-6ba110264/)
-<!-- [![Kaggle](https://img.shields.io/badge/Kaggle-%230077B5.svg?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/johndoe/) -->
 
 ###
 
