@@ -1,7 +1,7 @@
 # About Me
 
 It's me [Janit Kumar](https://github.com/MineNique).\
-Really I don't know about myself. \
+I am Nobody. \
 By the way, I am using **Arch Linux**
 
 ## Built With
