@@ -15,8 +15,3 @@ By the way, I am using **Arch Linux**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/janit-kumar-6ba110264/)
 
-###
-
-<img src="https://raw.githubusercontent.com/MineNique/MineNique/output/snake.svg" alt="Snake animation" />
-
-###
