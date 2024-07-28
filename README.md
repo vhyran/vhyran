@@ -4,7 +4,7 @@ It's me [Janit Kumar](https://github.com/MegumiMyo).\
 I am Nobody. \
 By the way, I am using **Arch Linux**
 
-## Skills & Technologies
+## Skills
 
  ![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white)
  ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=typescript&logoColor=white)
