@@ -87,4 +87,3 @@ async fn get_current_streak() -> Result<u32, Box<dyn std::error::Error>> { /* Im
 async fn get_total_prs() -> Result<u32, Box<dyn std::error::Error>> { /* Implement fetch */ Ok(0) }
 async fn get_repos_contributed_to() -> Result<u32, Box<dyn std::error::Error>> { /* Implement fetch */ Ok(0) }
 async fn get_open_source_projects() -> Result<u32, Box<dyn std::error::Error>> { /* Implement fetch */ Ok(0) }
-
