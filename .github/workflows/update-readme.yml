@@ -3,7 +3,6 @@ name: Update README with Dynamic Data
 on:
   schedule:
     - cron: "0 0 * * *"  # Daily at midnight
-  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update-readme:
@@ -47,4 +46,3 @@ jobs:
         git add README.md
         git commit -m "Update README with latest GitHub statistics"
         git push
-
