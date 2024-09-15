@@ -3,6 +3,7 @@ name: Update README with Dynamic Data
 on:
   schedule:
     - cron: "0 0 * * *"  # Daily at midnight
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   update-readme:
@@ -16,23 +17,31 @@ jobs:
       id: fetch_data
       run: |
         USERNAME="${{ github.actor }}"
+        echo "Fetching data for user: $USERNAME"
+        
+        # Fetch user data
         USER_DATA=$(curl -s https://api.github.com/users/$USERNAME)
         REPOS_DATA=$(curl -s https://api.github.com/users/$USERNAME/repos?per_page=100)
         PRS_DATA=$(curl -s "https://api.github.com/search/issues?q=type:pr+author:$USERNAME&per_page=100")
         STREAK_DATA=$(curl -s "https://github-readme-streak-stats.herokuapp.com/api?user=$USERNAME")
 
         # Extract data
-        echo "total_repos=$(echo $USER_DATA | jq -r '.public_repos')" >> $GITHUB_ENV
-        echo "total_commits=$(echo $USER_DATA | jq -r '.public_repos' | awk '{print $1 * 10}')" >> $GITHUB_ENV  # Placeholder for commits
-        echo "current_streak=$(echo $STREAK_DATA | jq -r '.currentStreak.days')" >> $GITHUB_ENV
-        echo "total_prs=$(echo $PRS_DATA | jq -r '.total_count')" >> $GITHUB_ENV
-        echo "repos_contributed_to=$(echo $REPOS_DATA | jq -r '. | length')" >> $GITHUB_ENV
-        echo "open_source_projects=3" >> $GITHUB_ENV  # Placeholder
+        TOTAL_REPOS=$(echo $USER_DATA | jq -r '.public_repos')
+        TOTAL_COMMITS=$(echo $USER_DATA | jq -r '.public_repos' | awk '{print $1 * 10}')  # Placeholder for commits
+        CURRENT_STREAK=$(echo $STREAK_DATA | jq -r '.currentStreak.days')
+        TOTAL_PRS=$(echo $PRS_DATA | jq -r '.total_count')
+        REPOS_CONTRIBUTED_TO=$(echo $REPOS_DATA | jq -r '. | length')
+        OPEN_SOURCE_PROJECTS=3  # Placeholder
         LANGUAGES=$(echo $REPOS_DATA | jq -r 'map(.language) | .[]' | sort | uniq -c | sort -rn | awk '{print $2}' | head -n 3 | paste -sd ", ")
-        echo "most_used_languages=\"$LANGUAGES\"" >> $GITHUB_ENV
+        MOST_USED_LANGUAGES="${LANGUAGES:-None}"
 
-    - name: Display README Content for Debugging
-      run: cat README.md
+        echo "total_repos=$TOTAL_REPOS" >> $GITHUB_ENV
+        echo "total_commits=$TOTAL_COMMITS" >> $GITHUB_ENV
+        echo "current_streak=$CURRENT_STREAK" >> $GITHUB_ENV
+        echo "total_prs=$TOTAL_PRS" >> $GITHUB_ENV
+        echo "repos_contributed_to=$REPOS_CONTRIBUTED_TO" >> $GITHUB_ENV
+        echo "open_source_projects=$OPEN_SOURCE_PROJECTS" >> $GITHUB_ENV
+        echo "most_used_languages=$MOST_USED_LANGUAGES" >> $GITHUB_ENV
 
     - name: Update README
       run: |
@@ -48,6 +57,5 @@ jobs:
         git config --global user.name "${{ github.actor }}"
         git config --global user.email "${{ github.actor }}@users.noreply.github.com"
         git add README.md
-        git status
         git commit -m "Update README with latest GitHub statistics" || echo "No changes to commit"
         git push
