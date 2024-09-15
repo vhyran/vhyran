@@ -1,61 +1,33 @@
-name: Update README with Dynamic Data
+name: Update README
 
 on:
-  schedule:
-    - cron: "0 0 * * *"  # Daily at midnight
-  workflow_dispatch:  # Allows manual triggering of the workflow
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Use Node.js v16
 
-    - name: Fetch GitHub Data
-      id: fetch_data
-      run: |
-        USERNAME="${{ github.actor }}"
-        echo "Fetching data for user: $USERNAME"
-        
-        # Fetch user data
-        USER_DATA=$(curl -s https://api.github.com/users/$USERNAME)
-        REPOS_DATA=$(curl -s https://api.github.com/users/$USERNAME/repos?per_page=100)
-        PRS_DATA=$(curl -s "https://api.github.com/search/issues?q=type:pr+author:$USERNAME&per_page=100")
-        STREAK_DATA=$(curl -s "https://github-readme-streak-stats.herokuapp.com/api?user=$USERNAME")
+      - name: Install dependencies
+        run: npm install
 
-        # Extract data
-        TOTAL_REPOS=$(echo $USER_DATA | jq -r '.public_repos')
-        TOTAL_COMMITS=$(echo $USER_DATA | jq -r '.public_repos' | awk '{print $1 * 10}')  # Placeholder for commits
-        CURRENT_STREAK=$(echo $STREAK_DATA | jq -r '.currentStreak.days')
-        TOTAL_PRS=$(echo $PRS_DATA | jq -r '.total_count')
-        REPOS_CONTRIBUTED_TO=$(echo $REPOS_DATA | jq -r '. | length')
-        OPEN_SOURCE_PROJECTS=3  # Placeholder
-        LANGUAGES=$(echo $REPOS_DATA | jq -r 'map(.language) | .[]' | sort | uniq -c | sort -rn | awk '{print $2}' | head -n 3 | paste -sd ", ")
-        MOST_USED_LANGUAGES="${LANGUAGES:-None}"
+      - name: Run script
+        run: node update-readme.js
 
-        echo "total_repos=$TOTAL_REPOS" >> $GITHUB_ENV
-        echo "total_commits=$TOTAL_COMMITS" >> $GITHUB_ENV
-        echo "current_streak=$CURRENT_STREAK" >> $GITHUB_ENV
-        echo "total_prs=$TOTAL_PRS" >> $GITHUB_ENV
-        echo "repos_contributed_to=$REPOS_CONTRIBUTED_TO" >> $GITHUB_ENV
-        echo "open_source_projects=$OPEN_SOURCE_PROJECTS" >> $GITHUB_ENV
-        echo "most_used_languages=$MOST_USED_LANGUAGES" >> $GITHUB_ENV
-
-    - name: Update README
-      run: |
-        echo "Updating README.md with new data"
-        sed -i "s/Total Repos:              .*/Total Repos:              ${total_repos}/" README.md
-        sed -i "s/Total Commits:            .*/Total Commits:            ${total_commits}/" README.md
-        sed -i "s/Current Streak:           .*/Current Streak:           ${current_streak}/" README.md
-        sed -i "s/Total PRs:                .*/Total PRs:                ${total_prs}/" README.md
-        sed -i "s/Repos Contributed To:     .*/Repos Contributed To:     ${repos_contributed_to}/" README.md
-        sed -i "s/Open-Source Projects:     .*/Open-Source Projects:     ${open_source_projects}/" README.md
-        sed -i "s/Most Used Languages:      .*/Most Used Languages:      ${most_used_languages}/" README.md
-
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-        git add README.md
-        git commit -m "Update README with latest GitHub statistics" || echo "No changes to commit"
-        git push
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update README with latest stats" || echo "No changes to commit"
+          git push
