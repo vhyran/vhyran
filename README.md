@@ -7,9 +7,9 @@ Btw: I use **Arch Linux**
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=xarcgit&show_icons=true&count_private=true&theme=maroongold&hide_border=true&title_color=E74C3C&icon_color=3498DB&text_color=ECF0F1&bg_color=212F3D" alt="GitHub Stats" style="max-width: 100%; height: auto;">  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xarcgit&layout=compact&theme=maroongold&hide_border=true&title_color=E74C3C&text_color=ECF0F1&bg_color=212F3D" alt="Top Languages" style="max-width: 100%; height: auto;">  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=xarcgit&theme=maroongold&hide_border=true&stroke=3498DB&ring=E74C3C&fire=E74C3C&currStreakNum=3498DB&sideNums=3498DB&currStreakLabel=E74C3C&sideLabels=ECF0F1&dates=ECF0F1&background=212F3D" alt="GitHub Streak" style="max-width: 100%; height: auto;">
+  <img src="https://github-readme-stats.vercel.app/api?username=xarcgit&show_icons=true&count_private=true&hide_border=true&theme=transparent&show_icons=true" alt="GitHub Stats" style="max-width: 100%; height: auto;">  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xarcgit&layout=compact&theme=transparent&hide_border=true&show_icons=true" alt="Top Languages" style="max-width: 100%; height: auto;">  
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=xarcgit&theme=transparent&hide_border=true&show_icons=true" alt="GitHub Streak" style="max-width: 100%; height: auto;">
 
 </div>
 
