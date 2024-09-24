@@ -5,10 +5,10 @@ Btw: I use **Arch Linux**
 
 ## 📊 Stats at a Glance
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<a href="https://github.com/xarcgit">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=xarcgit&theme=transparent&hide_border=true" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
+<a href="https://github.com/xarcgit">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=xarcgit&layout=compact&langs_count=8&card_width=320&theme=transparent&hide_border=true" />
 </a>
 
