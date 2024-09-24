@@ -5,11 +5,12 @@ Btw: I use **Arch Linux**
 
 ## 📊 Stats at a Glance
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-
-  <img src="https://github-readme-stats.vercel.app/api?username=xarcgit&show_icons=true&count_private=true&hide_border=true&theme=chartreuse-dark&show_icons=true" alt="GitHub Stats" style="max-width: 100%; height: auto;">  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xarcgit&layout=compact&theme=chartreuse-dark&hide_border=true&show_icons=true" alt="Top Languages" style="max-width: 100%; height: auto;">   
-</div>
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=xarcgit&theme=transparent&hide_border=true" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=xarcgit&layout=compact&langs_count=8&card_width=320&theme=transparent&hide_border=true" />
+</a>
 
 ## 🛠️ Skills
 
