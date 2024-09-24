@@ -7,10 +7,8 @@ Btw: I use **Arch Linux**
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=xarcgit&show_icons=true&count_private=true&hide_border=true&theme=transparent&show_icons=true" alt="GitHub Stats" style="max-width: 100%; height: auto;">  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xarcgit&layout=compact&theme=transparent&hide_border=true&show_icons=true" alt="Top Languages" style="max-width: 100%; height: auto;">  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=xarcgit&theme=transparent&hide_border=true&show_icons=true" alt="GitHub Streak" style="max-width: 100%; height: auto;">
-
+  <img src="https://github-readme-stats.vercel.app/api?username=xarcgit&show_icons=true&count_private=true&hide_border=true&theme=chartreuse-dark&show_icons=true" alt="GitHub Stats" style="max-width: 100%; height: auto;">  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xarcgit&layout=compact&theme=chartreuse-dark&hide_border=true&show_icons=true" alt="Top Languages" style="max-width: 100%; height: auto;">   
 </div>
 
 ## 🛠️ Skills
