@@ -16,11 +16,10 @@ Btw: I use **Arch Linux**
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <img src="https://img.shields.io/badge/TypeScript-3498DB?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" style="border: 2px solid #3498DB;">
-  <img src="https://img.shields.io/badge/JavaScript-F1C40F?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" style="border: 2px solid #F1C40F;">
+  <img src="https://img.shields.io/badge/JavaScript-fcd849?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" style="border: 2px solid #fcd849;">
   <img src="https://img.shields.io/badge/Python-3498DB?style=for-the-badge&logo=python&logoColor=white" alt="Python" style="border: 2px solid #3498DB;">
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c%23&logoColor=white" alt="C#" style="border: 2px solid #239120;">
   <img src="https://img.shields.io/badge/Shell-lightgrey?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell" style="border: 2px solid lightgrey;">
-  <img src="https://img.shields.io/badge/Rust-FF5722?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" style="border: 2px solid #FF5722;">
+  <img src="https://img.shields.io/badge/Zig-fcd849?style=for-the-badge&logo=zig&logoColor=white" alt="Zig" style="border: 2px solid #fcd849;">
   <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua" style="border: 2px solid #2C2D72;">
 </div>
 
