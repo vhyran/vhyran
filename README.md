@@ -1,6 +1,6 @@
 # About Me
 
-Hi! I'm Janit Kumar, an open-source enthusiast and developer passionate about exploring technology's endless possibilities. I believe in pushing boundaries and solving complex problems while keeping things fun and efficient. You can find me geeking out over new tools and technologies when I'm not coding.
+Hi! I'm Janit Kumar, an open-source enthusiast and developer passionate about exploring technology's endless possibilities. I believe in pushing boundaries and solving complex problems while keeping things fun and efficient. When I'm not coding, you can find me geeking out over new tools and technologies.
 
 🌍 I use Arch Linux for all my projects, embracing simplicity and customization.
 
