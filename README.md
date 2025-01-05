@@ -6,10 +6,10 @@ Hi! I'm Janit Kumar, an open-source enthusiast and developer passionate about ex
 
 ## 📊 Stats at a Glance
 
-<a href="https://github.com/xarcgit">
+<a href="https://github.com/vhyran">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=vhyran&theme=transparent&hide_border=true" />
 </a>
-<a href="https://github.com/xarcgit">
+<a href="https://github.com/vhyran">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=vhyran&layout=compact&langs_count=10&card_width=320&theme=transparent&hide_border=true" />
 </a>
 
