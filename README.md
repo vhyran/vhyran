@@ -30,5 +30,14 @@ Hi! I'm **Janit Kumar**, an open-source enthusiast and developer passionate abou
 
 I’m always up for new challenges and projects. Whether it’s brainstorming, coding, or contributing to open-source, feel free to reach out! Let’s connect and create something amazing together:
 
-- [**LinkedIn**](https://www.linkedin.com/in/janit-k-6ba110264/)  
-- [**x**](https://x.com/vhyran)  
+<div align="center">
+  <a href="https://www.linkedin.com/in/janit-k-6ba110264/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/vhyran">
+    <img src="https://img.shields.io/badge/X-1D9BF0?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="https://www.reddit.com/user/vhyran/">
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
+  </a>
+</div>
