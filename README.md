@@ -4,8 +4,6 @@ Hi! I'm **Janit Kumar**, an open-source enthusiast and developer passionate abou
 
 🌍 I use **Arch Linux** for all my projects, embracing simplicity and customization.
 
----
-
 ## 📊 Stats at a Glance
 
 <div align="center">
@@ -17,8 +15,6 @@ Hi! I'm **Janit Kumar**, an open-source enthusiast and developer passionate abou
   </a>
 </div>
 
----
-
 ## 🛠️ Skills
 
 <div align="center">
@@ -29,8 +25,6 @@ Hi! I'm **Janit Kumar**, an open-source enthusiast and developer passionate abou
   <img src="https://img.shields.io/badge/Zig-F7A41D?style=for-the-badge&logo=zig&logoColor=ffffff" alt="Zig" />
   <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=ffffff" alt="Lua" />
 </div>
-
----
 
 ## 🤝 Let’s Collaborate!
 
