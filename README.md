@@ -34,7 +34,7 @@ I’m always up for new challenges and projects. Whether it’s brainstorming, c
   <a href="https://www.linkedin.com/in/janit-k-6ba110264/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/vhyran">
+  <a href="https://x.com/itvhyran">
     <img src="https://img.shields.io/badge/X-1D9BF0?style=for-the-badge&logo=x&logoColor=white" alt="X" />
   </a>
   <a href="https://www.reddit.com/user/vhyran/">
